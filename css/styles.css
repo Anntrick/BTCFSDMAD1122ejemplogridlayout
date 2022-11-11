@@ -1,0 +1,66 @@
+/* section {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 3fr 2fr) ; /* definimos columnas - repeat para hacer varias iguales, el primer parametro es la cantidad y el segundo el tamaño 
+    grid-template-rows: minmax(50px, 200px); /* definimos filas 
+    grid-column-gap: 10px; /* Separacion vertical 
+    grid-row-gap: 20px; /* Separacion horizontal 
+} */
+
+
+
+/*--------------------------------------*/
+
+body {
+    margin:0;
+}
+
+header, footer {
+    background-color: aqua;
+    height: 60px;
+}
+
+nav {
+    background-color: blanchedalmond;
+}
+
+nav li{
+    width: calc(100% -5px);
+}
+
+.cajas {
+    /*height: 50px;*/
+    background-color: blanchedalmond;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+
+.section {
+    background-color: coral;
+    margin: 5px 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px ;
+}
+
+
+.section > article {
+    background-color: brown;
+    min-height: 50px;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+
+@media (max-width: 500px) {
+    .section { 
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
