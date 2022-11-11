@@ -58,9 +58,13 @@ li {
 
 
 
-@media (max-width: 500px) {
+@media (min-width: 200px) and (max-width: 500px){
     .section { 
         grid-template-columns: repeat(2, 1fr);
+        background-color: blueviolet;
     }
 
+    .section > article {
+        background-color: pink;
+    }
 }
